@@ -2,7 +2,7 @@ package param_test
 
 import (
 	"encoding/json"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
+	"github.com/greenflash-ai/go/packages/param"
 	"testing"
 )
 

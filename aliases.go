@@ -3,8 +3,8 @@
 package greenflashpublicapi
 
 import (
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apierror"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
+	"github.com/greenflash-ai/go/internal/apierror"
+	"github.com/greenflash-ai/go/packages/param"
 )
 
 // aliased to make [param.APIUnion] private when embedding

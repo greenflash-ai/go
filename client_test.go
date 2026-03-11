@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stainless-sdks/greenflash-public-api-go"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal"
-	"github.com/stainless-sdks/greenflash-public-api-go/option"
+	"github.com/greenflash-ai/go"
+	"github.com/greenflash-ai/go/internal"
+	"github.com/greenflash-ai/go/option"
 )
 
 type closureTransport struct {

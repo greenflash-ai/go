@@ -3,8 +3,8 @@ package apijson_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apijson"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
+	"github.com/greenflash-ai/go/internal/apijson"
+	"github.com/greenflash-ai/go/packages/param"
 	"reflect"
 	"testing"
 )

@@ -2,7 +2,7 @@ package paramutil
 
 import (
 	"fmt"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
+	"github.com/greenflash-ai/go/packages/param"
 	"reflect"
 )
 

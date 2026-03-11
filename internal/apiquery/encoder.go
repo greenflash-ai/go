@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
+	"github.com/greenflash-ai/go/packages/param"
 )
 
 var encoders sync.Map // map[reflect.Type]encoderFunc
