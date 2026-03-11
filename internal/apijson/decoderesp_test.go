@@ -2,8 +2,8 @@ package apijson_test
 
 import (
 	"encoding/json"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apijson"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/respjson"
+	"github.com/greenflash-ai/go/internal/apijson"
+	"github.com/greenflash-ai/go/packages/respjson"
 	"testing"
 )
 

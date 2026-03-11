@@ -1,8 +1,8 @@
 package sentinel_test
 
 import (
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/encoding/json/sentinel"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
+	"github.com/greenflash-ai/go/internal/encoding/json/sentinel"
+	"github.com/greenflash-ai/go/packages/param"
 	"reflect"
 	"slices"
 	"testing"

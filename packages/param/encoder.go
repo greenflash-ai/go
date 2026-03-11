@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	shimjson "github.com/stainless-sdks/greenflash-public-api-go/internal/encoding/json"
+	shimjson "github.com/greenflash-ai/go/internal/encoding/json"
 
 	"github.com/tidwall/sjson"
 )

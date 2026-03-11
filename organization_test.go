@@ -8,9 +8,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/stainless-sdks/greenflash-public-api-go"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/testutil"
-	"github.com/stainless-sdks/greenflash-public-api-go/option"
+	"github.com/greenflash-ai/go"
+	"github.com/greenflash-ai/go/internal/testutil"
+	"github.com/greenflash-ai/go/option"
 )
 
 func TestOrganizationNewWithOptionalParams(t *testing.T) {

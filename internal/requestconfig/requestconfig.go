@@ -18,10 +18,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/stainless-sdks/greenflash-public-api-go/internal"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apierror"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apiform"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apiquery"
+	"github.com/greenflash-ai/go/internal"
+	"github.com/greenflash-ai/go/internal/apierror"
+	"github.com/greenflash-ai/go/internal/apiform"
+	"github.com/greenflash-ai/go/internal/apiquery"
 )
 
 func getDefaultHeaders() map[string]string {

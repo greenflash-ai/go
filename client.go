@@ -8,8 +8,8 @@ import (
 	"os"
 	"slices"
 
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/requestconfig"
-	"github.com/stainless-sdks/greenflash-public-api-go/option"
+	"github.com/greenflash-ai/go/internal/requestconfig"
+	"github.com/greenflash-ai/go/option"
 )
 
 // Client creates a struct with services and top level methods that help with

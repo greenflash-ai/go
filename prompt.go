@@ -11,13 +11,13 @@ import (
 	"net/url"
 	"slices"
 
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apijson"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apiquery"
-	shimjson "github.com/stainless-sdks/greenflash-public-api-go/internal/encoding/json"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/requestconfig"
-	"github.com/stainless-sdks/greenflash-public-api-go/option"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/param"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/respjson"
+	"github.com/greenflash-ai/go/internal/apijson"
+	"github.com/greenflash-ai/go/internal/apiquery"
+	shimjson "github.com/greenflash-ai/go/internal/encoding/json"
+	"github.com/greenflash-ai/go/internal/requestconfig"
+	"github.com/greenflash-ai/go/option"
+	"github.com/greenflash-ai/go/packages/param"
+	"github.com/greenflash-ai/go/packages/respjson"
 )
 
 // Manage prompts
