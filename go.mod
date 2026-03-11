@@ -1,4 +1,4 @@
-module github.com/stainless-sdks/greenflash-public-api-go
+module github.com/greenflash-ai/go
 
 go 1.22
 

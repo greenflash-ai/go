@@ -2,7 +2,7 @@
 package json
 
 import (
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/encoding/json/shims"
+	"github.com/greenflash-ai/go/internal/encoding/json/shims"
 	"reflect"
 	"time"
 )

@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/http/httputil"
 
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apijson"
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/respjson"
+	"github.com/greenflash-ai/go/internal/apijson"
+	"github.com/greenflash-ai/go/packages/respjson"
 )
 
 // Error represents an error that originates from the API, i.e. when a request is

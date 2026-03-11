@@ -3,8 +3,8 @@ package respjson_test
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/apijson"
-	rj "github.com/stainless-sdks/greenflash-public-api-go/packages/respjson"
+	"github.com/greenflash-ai/go/internal/apijson"
+	rj "github.com/greenflash-ai/go/packages/respjson"
 	"reflect"
 	"testing"
 )

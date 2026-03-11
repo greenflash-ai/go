@@ -2,7 +2,7 @@ package param
 
 import (
 	"encoding/json"
-	"github.com/stainless-sdks/greenflash-public-api-go/internal/encoding/json/sentinel"
+	"github.com/greenflash-ai/go/internal/encoding/json/sentinel"
 	"reflect"
 )
 

@@ -3,7 +3,7 @@ package param
 import (
 	"encoding/json"
 	"fmt"
-	shimjson "github.com/stainless-sdks/greenflash-public-api-go/internal/encoding/json"
+	shimjson "github.com/greenflash-ai/go/internal/encoding/json"
 	"time"
 )
 

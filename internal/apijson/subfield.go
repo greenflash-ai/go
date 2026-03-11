@@ -1,7 +1,7 @@
 package apijson
 
 import (
-	"github.com/stainless-sdks/greenflash-public-api-go/packages/respjson"
+	"github.com/greenflash-ai/go/packages/respjson"
 	"reflect"
 )
 
