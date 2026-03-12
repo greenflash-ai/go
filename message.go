@@ -218,7 +218,7 @@ type MessageItemParam struct {
 	Content param.Opt[string] `json:"content,omitzero"`
 	// When this message was created. If not provided, messages get sequential
 	// timestamps. Use for importing historical data.
-	CreatedAt param.Opt[time.Time] `json:"createdAt,omitzero" format:"date-time"`
+	CreatedAt param.Opt[time.Time] `json:"createdAt,omitzero" format:"date"`
 	// Your external identifier for this message. Used to reference the message in
 	// other API calls.
 	ExternalMessageID param.Opt[string] `json:"externalMessageId,omitzero"`
