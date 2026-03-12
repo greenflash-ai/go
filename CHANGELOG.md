@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0 (2026-03-12)
+
+Full Changelog: [v0.0.2...v0.1.0](https://github.com/greenflash-ai/go/compare/v0.0.2...v0.1.0)
+
+### Features
+
+* **api:** manual updates ([27b1703](https://github.com/greenflash-ai/go/commit/27b17036020b09dc93d79e00cc8823c3fa6a0c95))
+
 ## 0.0.2 (2026-03-11)
 
 Full Changelog: [v0.0.1...v0.0.2](https://github.com/greenflash-ai/go/compare/v0.0.1...v0.0.2)
