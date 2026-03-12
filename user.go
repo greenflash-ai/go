@@ -193,7 +193,7 @@ type GetUserAnalyticsResponse struct {
 	AverageStruggle GetUserAnalyticsResponseAverageStruggle `json:"averageStruggle" api:"required"`
 	// Average sentiment across all conversations.
 	AverageUserSentiment GetUserAnalyticsResponseAverageUserSentiment `json:"averageUserSentiment" api:"required"`
-	// Summary of the user analytics.
+	// Structured participant profile summary.
 	Summary GetUserAnalyticsResponseSummary `json:"summary" api:"required"`
 	// Total number of conversations analyzed.
 	TotalConversations float64 `json:"totalConversations" api:"required"`
@@ -320,22 +320,143 @@ func (r *GetUserAnalyticsResponseAverageUserSentiment) UnmarshalJSON(data []byte
 	return apijson.UnmarshalRoot(data, r)
 }
 
-// Summary of the user analytics.
+// Structured participant profile summary.
 type GetUserAnalyticsResponseSummary struct {
-	Analysis string `json:"analysis" api:"required"`
-	Reason   string `json:"reason" api:"required"`
+	// Behavioral patterns observed across conversations.
+	BehavioralPatterns []GetUserAnalyticsResponseSummaryBehavioralPattern `json:"behavioralPatterns" api:"required"`
+	// Engagement profile.
+	Engagement GetUserAnalyticsResponseSummaryEngagement `json:"engagement" api:"required"`
+	// Transparency about what data drove the analysis.
+	Methodology string `json:"methodology" api:"required"`
+	// Product-specific observations (when business context is available).
+	ProductAlignment GetUserAnalyticsResponseSummaryProductAlignment `json:"productAlignment" api:"required"`
+	// Executive summary of the participant.
+	ProfileSummary string `json:"profileSummary" api:"required"`
+	// Key signals the product owner should know about.
+	Signals []GetUserAnalyticsResponseSummarySignal `json:"signals" api:"required"`
 	// JSON contains metadata for fields, check presence with [respjson.Field.Valid].
 	JSON struct {
-		Analysis    respjson.Field
-		Reason      respjson.Field
-		ExtraFields map[string]respjson.Field
-		raw         string
+		BehavioralPatterns respjson.Field
+		Engagement         respjson.Field
+		Methodology        respjson.Field
+		ProductAlignment   respjson.Field
+		ProfileSummary     respjson.Field
+		Signals            respjson.Field
+		ExtraFields        map[string]respjson.Field
+		raw                string
 	} `json:"-"`
 }
 
 // Returns the unmodified JSON received from the API
 func (r GetUserAnalyticsResponseSummary) RawJSON() string { return r.JSON.raw }
 func (r *GetUserAnalyticsResponseSummary) UnmarshalJSON(data []byte) error {
+	return apijson.UnmarshalRoot(data, r)
+}
+
+type GetUserAnalyticsResponseSummaryBehavioralPattern struct {
+	// Specific examples from conversations.
+	Evidence string `json:"evidence" api:"required"`
+	// How often this pattern appears.
+	//
+	// Any of "recurring", "occasional", "rare".
+	Frequency string `json:"frequency" api:"required"`
+	// What the participant consistently does.
+	Pattern string `json:"pattern" api:"required"`
+	// JSON contains metadata for fields, check presence with [respjson.Field.Valid].
+	JSON struct {
+		Evidence    respjson.Field
+		Frequency   respjson.Field
+		Pattern     respjson.Field
+		ExtraFields map[string]respjson.Field
+		raw         string
+	} `json:"-"`
+}
+
+// Returns the unmodified JSON received from the API
+func (r GetUserAnalyticsResponseSummaryBehavioralPattern) RawJSON() string { return r.JSON.raw }
+func (r *GetUserAnalyticsResponseSummaryBehavioralPattern) UnmarshalJSON(data []byte) error {
+	return apijson.UnmarshalRoot(data, r)
+}
+
+// Engagement profile.
+type GetUserAnalyticsResponseSummaryEngagement struct {
+	// Explanation of the engagement assessment.
+	Description string `json:"description" api:"required"`
+	// Engagement level classification.
+	//
+	// Any of "power_user", "regular", "casual", "at_risk", "churning".
+	Level string `json:"level" api:"required"`
+	// Engagement trend direction.
+	//
+	// Any of "growing", "stable", "declining".
+	Trajectory string `json:"trajectory" api:"required"`
+	// JSON contains metadata for fields, check presence with [respjson.Field.Valid].
+	JSON struct {
+		Description respjson.Field
+		Level       respjson.Field
+		Trajectory  respjson.Field
+		ExtraFields map[string]respjson.Field
+		raw         string
+	} `json:"-"`
+}
+
+// Returns the unmodified JSON received from the API
+func (r GetUserAnalyticsResponseSummaryEngagement) RawJSON() string { return r.JSON.raw }
+func (r *GetUserAnalyticsResponseSummaryEngagement) UnmarshalJSON(data []byte) error {
+	return apijson.UnmarshalRoot(data, r)
+}
+
+// Product-specific observations (when business context is available).
+type GetUserAnalyticsResponseSummaryProductAlignment struct {
+	// Where the product isn't serving them.
+	Gaps []string `json:"gaps" api:"required"`
+	// What's working well for this participant.
+	Strengths []string `json:"strengths" api:"required"`
+	// How the participant relates to product goals.
+	Summary string `json:"summary" api:"required"`
+	// JSON contains metadata for fields, check presence with [respjson.Field.Valid].
+	JSON struct {
+		Gaps        respjson.Field
+		Strengths   respjson.Field
+		Summary     respjson.Field
+		ExtraFields map[string]respjson.Field
+		raw         string
+	} `json:"-"`
+}
+
+// Returns the unmodified JSON received from the API
+func (r GetUserAnalyticsResponseSummaryProductAlignment) RawJSON() string { return r.JSON.raw }
+func (r *GetUserAnalyticsResponseSummaryProductAlignment) UnmarshalJSON(data []byte) error {
+	return apijson.UnmarshalRoot(data, r)
+}
+
+type GetUserAnalyticsResponseSummarySignal struct {
+	// Evidence-based description.
+	Description string `json:"description" api:"required"`
+	// Signal priority.
+	//
+	// Any of "high", "medium", "low".
+	Priority string `json:"priority" api:"required"`
+	// Short headline.
+	Title string `json:"title" api:"required"`
+	// Signal category.
+	//
+	// Any of "opportunity", "risk", "insight".
+	Type string `json:"type" api:"required"`
+	// JSON contains metadata for fields, check presence with [respjson.Field.Valid].
+	JSON struct {
+		Description respjson.Field
+		Priority    respjson.Field
+		Title       respjson.Field
+		Type        respjson.Field
+		ExtraFields map[string]respjson.Field
+		raw         string
+	} `json:"-"`
+}
+
+// Returns the unmodified JSON received from the API
+func (r GetUserAnalyticsResponseSummarySignal) RawJSON() string { return r.JSON.raw }
+func (r *GetUserAnalyticsResponseSummarySignal) UnmarshalJSON(data []byte) error {
 	return apijson.UnmarshalRoot(data, r)
 }
 

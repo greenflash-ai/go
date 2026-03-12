@@ -78,7 +78,7 @@ type LogRatingParams struct {
 	// externalConversationId, messageId, or externalMessageId must be provided.
 	MessageID param.Opt[string] `json:"messageId,omitzero"`
 	// When the rating was given. Defaults to current time if not provided.
-	RatedAt param.Opt[time.Time] `json:"ratedAt,omitzero" format:"date-time"`
+	RatedAt param.Opt[time.Time] `json:"ratedAt,omitzero" format:"date"`
 	paramObj
 }
 
