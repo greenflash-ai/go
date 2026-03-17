@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.1 (2026-03-17)
+
+Full Changelog: [v0.1.0...v0.1.1](https://github.com/greenflash-ai/go/compare/v0.1.0...v0.1.1)
+
+### Chores
+
+* **internal:** tweak CI branches ([9948da5](https://github.com/greenflash-ai/go/commit/9948da54b4d756d322806b4ed12ce22f07df1164))
+
 ## 0.1.0 (2026-03-12)
 
 Full Changelog: [v0.0.2...v0.1.0](https://github.com/greenflash-ai/go/compare/v0.0.2...v0.1.0)
