@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.2 (2026-03-21)
+
+Full Changelog: [v0.1.1...v0.1.2](https://github.com/greenflash-ai/go/compare/v0.1.1...v0.1.2)
+
+### Chores
+
+* **tests:** bump steady to v0.19.4 ([3e5d66c](https://github.com/greenflash-ai/go/commit/3e5d66cd3c83533f1008c16f07060e7417cdb44b))
+* **tests:** bump steady to v0.19.5 ([548b9d6](https://github.com/greenflash-ai/go/commit/548b9d649043004200fd1618490e57024d6ac045))
+
+
+### Refactors
+
+* **tests:** switch from prism to steady ([aaf2007](https://github.com/greenflash-ai/go/commit/aaf2007547681863490ec30dce37e8af58a0d140))
+
 ## 0.1.1 (2026-03-17)
 
 Full Changelog: [v0.1.0...v0.1.1](https://github.com/greenflash-ai/go/compare/v0.1.0...v0.1.1)
